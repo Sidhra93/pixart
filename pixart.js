@@ -12,7 +12,7 @@ for (var i = 1; i <= 10000; i++) {
   $('body').append($div);
 }
 
-$('body').on('click', '.square', function(event){
+$('body').on('mouseover', '.square', function(event){
   var color = $colorInput.val();
   $(event.target).css('background', color);
 });
