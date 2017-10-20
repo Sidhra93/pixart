@@ -6,3 +6,8 @@ $setColorBtn.on('click', function(event){
   var color = $colorInput.val();
   $('.brush').css('background', color);
 })
+
+for (var i = 1; i <= 10000; i++) {
+  $div = $('<div>').addClass("square");
+  $('body').append($div);
+}
