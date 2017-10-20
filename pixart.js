@@ -13,5 +13,6 @@ for (var i = 1; i <= 10000; i++) {
 }
 
 $('body').on('click', '.square', function(event){
-  $(event.target).css('background', 'green');
+  var color = $colorInput.val();
+  $(event.target).css('background', color);
 });
